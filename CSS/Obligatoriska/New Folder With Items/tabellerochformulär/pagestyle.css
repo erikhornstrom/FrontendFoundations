@@ -1,0 +1,63 @@
+#autoTable {
+   width: 100px;
+   table-layout: auto;
+}
+
+#autoTable, th, td {
+   border: 1px solid;
+}
+
+#fixedTable {
+   table-layout: fixed;
+   width: 100px;
+}
+
+#fixedTable, th, td {
+   border: 1px solid;
+}
+
+#styledInput {
+   font-size: 18px;
+   color: grey;
+   width: 30%;
+   padding: 10px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   outline: none;
+}
+
+#styledInput:focus {
+   color: white;
+   border: 2px solid black;
+   background-color: #B1BFB8;
+   outline: none;
+}
+
+#styledTextarea {
+   font-size: 18px;
+   color: grey;
+   width: 30%;
+   height: 100px;
+   padding: 10px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   outline: none;
+}
+
+#styledTextarea:focus {
+   color: white;
+   border: 2px solid black;
+   background-color: #B1BFB8;
+   outline: none;
+}
+
+#styledButton {
+   font-size: 18px;
+   color: black;
+   background-color: #B1BFB8;
+   width: 80px;
+   padding: 10px;
+   border: 2px solid black;
+   border-radius: 10px;
+   outline: none;
+}

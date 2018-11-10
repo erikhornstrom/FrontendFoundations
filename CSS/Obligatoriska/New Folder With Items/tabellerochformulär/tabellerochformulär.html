@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>Tabeller och Formulär</title>
+   <link rel="stylesheet" href="../sitestyle.css" type=text/css>
+   <link rel="stylesheet" href="pagestyle.css" type="text/css">
+</head>
+<body>
+   <div class="header">
+      <a id="nameheader" href="index.html">[erik hörnström - webbklient - CSS]</a>
+      <img id="badgeimg" src="images/badges.png" alt="htmlcssbadge" />
+      <h1 id="css">CSS3</h1>
+      <h1 id="x">X</h1>
+      <h1 id="html">HTML5</h1>
+
+
+      <ul id="site-nav">
+         <li> <a href="../index.html">Grunderna</a></li>
+         <li> <a href="../textochlistor/textochlistor.html">Text och Listor</a></li>
+         <li> <a href="../marginsborderspadding/marginsborderspadding.html">Marginaler, Borders & Padding</a></li>
+         <li> <a href="../bilderochbakgrunder/bilderochbakgrunder.html">Bilder och bakgrunder</a></li>
+         <li> <a href="../navigering/navigering.html">Navigering</a></li>
+         <li> <a href="tabellerochformulär.html">Tabeller och Formulär</a></li>
+         <li> <a href="../sidlayout/sidlayout.html">Sidlayout</a></li>
+         <li> <a href="../anpassning/anpassning.html">Anpassning</a></li>
+      </ul>
+
+      <h1 class="pagetitle">Tabeller och Formulär</h1>
+   </div>
+
+      <div class="firstLevelSection">
+         <h2>Tabeller</h2>
+         <div class="secondLevenSection">
+            <h3>table-layout</h3>
+            <p>table-layout bestämmer hur layouten på en tabell ska vara. Värdena man kan använda är auto(default) och fixed.</p>
+            <p>Här är ett exempel på table-layout: auto; Cellernas storlek är anpassade efter texten.</p>
+            <table id="autoTable">
+               <tr>
+                  <th>Förnamn</th>
+                  <th>Efternamn</th>
+                  <th>Ålder</th>
+               </tr>
+               <tr>
+                  <td>Sven</td>
+                  <td>Svensson</td>
+                  <td>33</td>
+               </tr>
+               <tr>
+                  <td>Anders</td>
+                  <td>Andersson</td>
+                  <td>44</td>
+               </tr>
+            </table>
+            <p>Här är ett exempel på table-layout: fixed; Cellernas storlek är ej anpassade efter storleken på texten utan efter storleken på sin container.</p>
+            <table id="fixedTable">
+               <tr>
+                  <th>Förnamn</th>
+                  <th>Efternamn</th>
+                  <th>Ålder</th>
+               </tr>
+               <tr>
+                  <td>Sven</td>
+                  <td>Svensson</td>
+                  <td>33</td>
+               </tr>
+               <tr>
+                  <td>Anders</td>
+                  <td>Andersson</td>
+                  <td>44</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Styling av formulär</h2>
+            <p>Vi kan styla inputfält på många olika sätt. Först ser vi ett exempel på ett default inputfält utan styling:</p>
+            <form>
+               <input type="text" name="namn" placeholder="Ditt namn här">
+            </form>
+            <p>Nedan kan vi se ett exempel på ett inputfält som vi har stylat:</p>
+            <form>
+               <input id="styledInput" type="text" name="namn" placeholder="Ditt namn här...">
+               <p>Denna typ av styling har vi gjort:</p>
+               <ul>
+                  <li>Större textstorlek med font-size: 18px</li>
+                  <li>Ändrat textfärgen till grå med color: grey</li>
+                  <li>Ändrat bredd med width: 30%</li>
+                  <li>Skapat avstånd mellan text och kantlinje med padding: 10px</li>
+                  <li>Satt en 2px solid grå kantlinje med border: 2px solid grey</li>
+                  <li>Rundat kanterna med border-radius: 10px</li>
+                  <li>Tagit bort den blåa outlinen genom outline: none</li>
+                  <li>När man klickar på länken använder vi pseudoklassen focous för att göra ytterligare styling i detta tillstånd:</li>
+                  <li>Ändra textfärgen man skriver in till vit med color: white</li>
+                  <li>Ändra färg på kantlinjen till svart med border-color: black</li>
+                  <li>Ändra färg på bakgrunden med background-color: #B1BFB8</li>
+               </ul>
+            </form>
+            <p>Alla dessa stylingförändringarna kan vi även göra på textarea. De som inte hanterar pseudoklassen focus går även att göra på knappar:</p>
+            <form>
+               <textarea id="styledTextarea" cols="30" rows="10" placeholder="Skriv text här..."></textarea> <br>
+               <input id="styledButton" type="submit" value="Submit">
+            </form>
+      </div>
+   </body>
+</html>

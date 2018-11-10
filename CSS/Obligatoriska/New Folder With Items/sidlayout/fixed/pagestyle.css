@@ -1,0 +1,169 @@
+* {
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+body {
+   background-color: lightgray;
+}
+
+.header {
+   width: 1024px;
+}
+
+.colContainer {
+   width: 1024px;
+   display: inline-block;
+}
+
+.leftColumn, .middleColumn, .rightColumn {
+   float: left;
+}
+
+.leftColumn, .rightColumn {
+   width: 153px;
+}
+
+.middleColumn {
+   width: 716px;
+   border-right: 1px solid;
+   border-left: 1px solid;
+}
+
+#relativeP {
+   position: relative;
+   bottom: 20px;
+}
+
+#absoluteDiv {
+   border: 1px solid green;
+   position:relative;
+}
+
+#absoluteDiv h4 {
+   margin-top: 0;
+   position: absolute;
+   margin-bottom: 0%;
+   bottom: 0;
+}
+
+#fixedP {
+   color:red;
+   margin-top: 0;
+   position: fixed;
+   top: 0;
+   right: 0;
+}
+
+#stickyP {
+   position:sticky;
+   background-color: lightgreen;
+   top: 0;
+}
+
+.topleftbottomrightDiv {
+   margin: 0px;
+   border: 2px solid green;
+   position: relative;
+   height: 200px;
+}
+
+#topExempel {
+   position: absolute;
+   top: 20px;
+}
+
+#leftExempel {
+   position: absolute;
+   left: 30px;
+}
+
+#bottomExempel {
+   position: absolute;
+   bottom: 20px;
+}
+
+#rightExempel {
+   position: absolute;
+   right: 30px;
+}
+
+.zindexDiv {
+   border: 2px solid green;
+   position: relative;
+   height: 200px;
+}
+
+#zindexP1 {
+   font-size: 20px;
+   text-shadow: 1px 1px 0px black;
+   position: absolute;
+   bottom: 20px;
+   color: green;
+   z-index: 0;
+}
+
+#zindexP2 {
+   font-size: 16px;
+   position: absolute;
+   bottom: 10px;
+   color: black;
+   opacity: 0.4;
+   z-index: 0;
+}
+
+.floatdiv {
+   overflow: hidden;
+}
+
+.floatdiv1 {
+   border: 2px solid green;
+   width: 400px;
+   float: left;
+}
+
+.floatdiv2 {
+   border: 2px solid green;
+   width: 100px;
+   float: right;
+}
+
+#clearP {
+ clear:both;
+}
+
+#clearImg {
+   float:left;
+   width:80px;
+}
+
+#heightP {
+   border: 1px solid green;
+   height: 100px;
+}
+
+#widthP {
+   border: 1px solid green;
+   width: 100px;
+}
+
+#maxWidthP {
+   max-width: 600px;
+}
+
+#maxHeightP {
+   max-height: 25px;
+}
+
+#minWidthP {
+   min-width: 300px;
+}
+
+#minHeighthP {
+   min-height: 15px;
+}
+
+#vaImg {
+   height: 8px;
+   vertical-align: top;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>CSS</title>
+   <link rel="stylesheet" href="sitestyle.css" type=text/css>
+   <link rel="stylesheet" href="pagestyle.css" type="text/css">
+</head>
+<body>
+   <div class="header">
+      <a id="nameheader" href="index.html">[erik hörnström - webbklient - CSS]</a>
+      <img id="badgeimg" src="images/badges.png" />
+      <h1 id="css">CSS3</h1>
+      <h1 id="x">X</h1>
+      <h1 id="html">HTML5</h1>
+
+      <ul id="site-nav">
+         <li> <a href="index.html">Grunderna</a></li>
+         <li> <a href="textochlistor/textochlistor.html">Text och Listor</a></li>
+         <li> <a href="marginsborderspadding/marginsborderspadding.html">Marginaler, Borders & Padding</a></li>
+         <li> <a href="bilderochbakgrunder/bilderochbakgrunder.html">Bilder och bakgrunder</a></li>
+         <li> <a href="navigering/navigering.html">Navigering</a></li>
+         <li> <a href="tabellerochformulär/tabellerochformulär.html">Tabeller och Formulär</a></li>
+         <li> <a href="sidlayout/sidlayout.html">Sidlayout</a></li>
+         <li> <a href="anpassning/anpassning.html">Anpassning</a></li>
+      </ul>
+
+      <h1 class="pagetitle">Grunderna i CSS3</h1>
+   </div>
+
+   <nav class="page-nav">
+      <a href="#externalcss"> >> EXTERNT LÄNKAD CSS-FIL</a>
+      <a href="#arv"> >> ARV</a>
+      <a href="#cascade"> >> CASCADE</a>
+      <a href="#selektorer"> >> SELEKTORER</a>
+      <a href="#enheter"> >> ENHETER</a>
+      <a href="#uppbyggnad"> >> CSS-DOKUMENT - UPPBYGGNAD</a>
+   </nav>
+
+   <div class="firstLevelSection" id="externalcss">
+      <h2 class="sectionheaders">Externt länkad css-fil och dess fördelar</h2>
+      <p>
+         Istället för att skriva styling direkt i vårt HTML-dokument så kan vi skapa externa css-dokument som vi sedan länkar till i head-sektionen i vår HTML. <br>
+         Detta gör det möjligt att ha vår css mer strukturerad då vi kan skapa olika css-dokument för olika delar av stylingen. Det gör det även möjligt att <br>
+         på flera olika sidor länka till samma css-dokument vilket i sin tur gör att vi slipper skriva samma kod på flera ställen. Exempelvis om vi vill att alla <br>
+         sidor ska ha samma tema (bakgrund, font, utseende på knappar etc etc).
+      </p>
+   </div>
+
+   <div class="firstLevelSection" id="arv">
+      <h2 class="sectionheaders">Arv</h2>
+      <p>
+         Med arv betyder att styling görs på ett parent-element vilket gör att barnen till det element får samma styling. <br />
+         Värt att notera är att alla typer av stylingproperties inte går att ärva. Man kan dock "tvinga" element att ärva från sin förälder genom nyckelordet "inherit". <br />
+         Exempelvis så är padding ett property som inte ärvs automatiskt, så för att få ett barn att ärva detta kan vi göra följande: <br />
+      </p>
+      <pre><code>
+         p {
+            padding: 20px;
+         }
+
+         #elementInParagraph {
+            padding: inherit;
+         }
+      </code></pre>
+   </div>
+
+
+   <div class="firstLevelSection" id="cascade">
+      <h2 class="sectionheaders">Cascade</h2>
+      <p>
+         CSS står för Cascading Style Sheets och Cascade betyder processen av att kombinera CSS-filer och CSS-regler(styling) och lösa konflikter mellan dem. <br />
+         Konflikterna uppstår om man stylar samma property av ett element på flera olika ställen. Dvs man <i>kan</i> styla <i>olika</i> properties av ett element på flera olika ställen och all  <br />
+         styling kommer appliceras, men om man exempelvis ändrar color på ett element på ett ställe och sedan ändrar font-color igen på samma element på ett annat ställe så uppstår en konflikt. <br />
+         Vilken styling ska gälla när sidan presenteras?
+      </p>
+      <p>
+         För att lösa dessa typer av konflikter använder sig CSS av två regler: <br />
+      </p>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">Regel 1</h3>
+         <p>
+            Den första regeln är regeln som säger att om man stylar ett element med samma selektor så är det den senast applicerade stylingen den som "vinner". <br />
+            Exempel:
+         </p>
+         <pre><code>
+            h1 {
+               color: blue;
+            }
+
+            h1 {
+               color: red;
+            }
+         </code></pre>
+         <p>
+            I detta fall kommer våra h1 få färgen röd då de båda använder samma selektor och den styling som säger att elementet ska vara rött ligger efter den första som säger blå.
+         </p>
+      </div>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">Regel 2</h3>
+         <p>
+            Den andra regeln är regeln om specifcitet. Den säger att stylingen som är gjord med den mest specifika selektorn "vinner". <br />
+            Exempel:
+         </p>
+         <pre><code>
+            #h1Tag {
+               color: red;
+            }
+
+            h1 {
+               color: blue;
+            }
+         </code></pre>
+         <p>
+            I ovan fall kommer vår h1 få färgen röd trots att vi har styling som säger att h1 ska vara blå efter. Detta pga av att en ID-selektor(#h1Tag) är mer specifik än type-selektorn(h1).
+         </p>
+      </div>
+   </div>
+
+   <div class="firstLevelSection" id="selektorer">
+      <h2 class="sectionheaders">Selektorer</h2>
+      <nav>
+         <a href="#tagg">Tagg</a>
+         <a href="#attribut">Attribut</a>
+         <a href="#klass">Klass</a>
+         <a href="#id">ID</a>
+         <a href="#barn">Barn</a>
+      </nav>
+      <p>
+         Selektorer används i CSS för att välja vilket/vilka element man vill styla. För att styla alla h2 på denna sida skulle vi exempelvis kunna göra:
+      </p>
+      <pre><code>
+         h2 {
+            /*styling här*/
+         }
+      </code></pre>
+      <p>
+         I exemplet ovan är "h2" selektorn.
+      </p>
+
+      <div class="secondLevelSection" id="tagg">
+         <h3 class="sectionheaders">Tagg</h3>
+         <p>
+            En tagg-selektor är en selektor som man använder när man vill styla alla element av en viss typ. Exempel på det ser vi ovan när vi använder "h2" som selektor.
+         </p>
+      </div>
+
+
+      <div class="secondLevelSection" id="attribut">
+         <h3 class="sectionheaders">Attribut</h3>
+         <p>
+            En attribut-selektor är en selektor som används när man vill styla alla element som har samma attribut. Om ett/flera element har attributet "alt" kan vi nå det/dem såhär:
+         </p>
+         <pre>
+            <code>
+               [alt] {
+                  padding: 40px;
+               }
+            </code>
+         </pre>
+      </div>
+
+
+      <div class="secondLevelSection" id="klass">
+         <h3 class="sectionheaders">Klass</h3>
+         <p>
+            Klass-selektorn används när man svill styla alla element med samma namn på klassattributet. Exempel:
+         </p>
+         <pre>
+            <code>
+               .myParagraphs {
+                  color: red;
+               }
+            </code>
+         </pre>
+      </div>
+
+
+      <div class="secondLevelSection" id="id">
+         <h3 class="sectionheaders">ID</h3>
+         <p>
+            ID-selektorn används när man vill ett styla element med ett visst namn på sitt ID-attribut. Exempel:
+         </p>
+         <pre>
+            <code>
+               #myId {
+                  color: red;
+               }
+            </code>
+         </pre>
+      </div>
+
+
+      <div class="secondLevelSection" id="barn">
+         <h3 class="sectionheaders">Barn</h3>
+         <p>
+            Barn-selektorn används när man vill styla ett element som är barn till ett annat element. I nedan exempel vill vi styla alla p-element som är barn till header-element:
+         </p>
+         <pre>
+            <code>
+               header > p {
+                  color: red;
+               }
+            </code>
+         </pre>
+      </div>
+
+   </div>
+
+   <div class="firstLevelSection" id="enheter">
+      <h2 class="sectionheaders">Enheter</h2>
+      <p>
+         Enheter, units, är de olika sätten CSS använder sig av för att representera längd. Det finns absoluta typer och relativa typer:
+      </p>
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">Absoluta enheter</h3>
+         <ul>
+            <li><strong>in</strong> - inches (1in = 96px = 2.54cm)</li>
+            <li><strong>cm</strong> - centimeter </li>
+            <li><strong>mm</strong> - millimeter </li>
+            <li><strong>pt</strong> - points (1pt = 1/72 av 1in) </li>
+            <li><strong>pc</strong> - picas (1pc = 12 pt) </li>
+            <li><strong>px</strong> - pixels (1px = 1/96th av 1in)</li>
+         </ul>
+      </div>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">Relativa enheter</h3>
+         <ul>
+            <li><strong>em</strong> - Relativt till fontstorleken av elementet (2em betyder 2 gånger storleken av nuvarande font) </li>
+            <li><strong>ex</strong> - Relativt till fontstorlek. 1ex är höjden för "x" av nuvarande font</li>
+            <li><strong>%</strong> - Procentuell storlek relativ till storleken på föräldraelementet</li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="firstLevelSection" id="uppbyggnad">
+      <h2 class="sectionheaders">Hur ett CSS-dokument är uppbyggt</h2>
+      <p>
+         Med CSS-dokument menar man den filen där man skriver sina CSS-regler(stylingen).
+      </p>
+      <ul>
+         <li>En CSS-regel består utav en selektor och en deklarationsdel. Deklarationsdelen omsluts av måsvingar. </li>
+         <li>Selektorn pekar på HTML-elementet man vill styla.</li>
+         <li>Deklarationsdelen består utav en eller flera styling-deklarationer separerade med semikolon.</li>
+         <li>Varje deklaration innehåller ett CSS-attribut och ett värde för det attributet. </li>
+         <li>Attributet och värdet separeras med semikolon.</li>
+      </ul>
+      <p>Exempel:</p>
+      <pre><code>
+         pre {
+            margin: 0px;
+            padding: 0px;
+         }
+
+         a {
+            color: black;
+         }
+
+         a:visited {
+            color: black;
+         }
+
+         .firstLevelSection {
+            background-color: #f4f7ef;
+            border: solid 1px;
+            border-radius: 15px;
+            border-color: #b3b3bf;
+            margin: 20px;
+         }
+      </code></pre>
+   </div>
+   <footer>
+      <div class="name">
+         <p>
+            >>erho7892 /
+         </p>
+      </div>
+      <div class="info">
+         <p>
+            Erik Hörnström
+         </p>
+         <p>
+            erho7892@dsv.su.se
+         </p>
+      </div>
+   </footer>
+</body>
+</html>

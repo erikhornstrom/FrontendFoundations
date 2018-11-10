@@ -1,0 +1,17 @@
+#backgroundP {
+   overflow: scroll;
+   height: 300px;
+   color: white;
+   background: url(../images/backgroundimg.jpeg) padding-box local;
+   border: 10px solid white;
+   outline: 2px solid grey;
+}
+
+.firstLevelSection h4 {
+   clear: both;
+}
+
+.boatpic {
+   float: left;
+   margin-right: 20px;
+}

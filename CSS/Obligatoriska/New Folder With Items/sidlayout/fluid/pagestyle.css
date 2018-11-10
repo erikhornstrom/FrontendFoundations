@@ -1,0 +1,28 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: lightgray;
+}
+
+.header {
+   width: 100%;
+}
+
+.colContainer {
+   width: 100%;
+   display: inline-block;
+}
+
+.leftColumn, .middleColumn, .rightColumn {
+   float: left;
+}
+
+.leftColumn, .rightColumn {
+   width: 15%;
+}
+
+.middleColumn {
+   width: 70%;
+}

@@ -1,0 +1,124 @@
+.timesNewRoman {
+   font-family: "Times New Roman", serif;
+}
+
+.arial {
+   font-family: "Arial", sans-serif;
+}
+
+.monospace {
+   font-family: monospace;
+}
+
+.fourthLevelSection ol {
+   margin-top: 0px;
+   margin-left: 0px;
+   padding-left: 25px;
+}
+
+#georgia {
+   font-family: "Georgia", serif;
+}
+
+#verdana {
+   font-family: "Verdana", sans-serif;
+}
+
+#courierNew {
+   font-family: "Courier New", monospace;
+}
+
+#lucidaConsole {
+   font-family: "Lucida Console", monospace;
+}
+
+#preDefinedColorP {
+   color: red;
+}
+
+#hexDecColorP {
+   color: #57b9c6;
+}
+
+#fontSizeP {
+   font-size: 1.2em;
+}
+
+#lineHeightP {
+   line-height: 85%;
+}
+
+#italicP {
+   font-style: italic;
+}
+
+#fontVariantP {
+   font-variant: small-caps;
+}
+
+#fontWeightP {
+   font-weight: bolder;
+}
+
+#fontP {
+   font: italic normal bolder 20px Times New Roman, serif;
+}
+
+#letterSpacingP {
+   letter-spacing: -1px;
+}
+
+#wordSpacingP {
+   word-spacing: 10px;
+}
+
+#textAlignP {
+   text-align: center;
+}
+
+#textDecorationP {
+   text-decoration: underline;
+}
+
+#textShadowP {
+   text-shadow: 3px 3px 2px grey;
+}
+
+#textIndentP {
+   text-indent: 20px;
+}
+
+#textTransformP {
+   text-transform: uppercase;
+}
+
+#whiteSpaceP {
+   white-space: pre;
+}
+
+#firstLineP::first-line {
+   color:red;
+}
+
+#firstLetterP::first-letter {
+   color: red;
+}
+
+#listStyleUL {
+   list-style-type: square;
+   list-style-position: outside;
+   border-style: solid;
+   border-width: 1px;
+}
+
+#listStyleUL li {
+   border-style: solid;
+   border-width: 1px;
+}
+
+#listStyleUL .imgitem {
+   border-style: none;
+   list-style-image: url(../images/listbulletimg.png);
+   list-style-type: square;
+   margin-bottom: 5px;
+}

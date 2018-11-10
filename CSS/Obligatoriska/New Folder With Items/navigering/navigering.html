@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Navigering</title>
+      <link rel="stylesheet" href="../sitestyle.css" type="text/css">
+      <link rel="stylesheet" href="pagestyle.css" type="text/css">
+   </head>
+
+   <body>
+      <div class="header">
+         <a id="nameheader" href="../index.html">[erik hörnström - webbklient - CSS]</a>
+         <img id="badgeimg" src="../images/badges.png" alt="html/cssbadges" />
+         <h1 id="css">CSS3</h1>
+         <h1 id="x">X</h1>
+         <h1 id="html">HTML5</h1>
+
+
+         <ul id="site-nav">
+            <li> <a href="../index.html">Grunderna</a></li>
+            <li> <a href="../textochlistor/textochlistor.html">Text och Listor</a></li>
+            <li> <a href="../marginsborderspadding/marginsborderspadding.html">Marginaler, Borders & Padding</a></li>
+            <li> <a href="../bilderochbakgrunder/bilderochbakgrunder.html">Bilder och bakgrunder</a></li>
+            <li> <a href="navigering.html">Navigering</a></li>
+            <li> <a href="../tabellerochformulär/tabellerochformulär.html">Tabeller och Formulär</a></li>
+            <li> <a href="../sidlayout/sidlayout.html">Sidlayout</a></li>
+            <li> <a href="../anpassning/anpassning.html">Anpassning</a></li>
+         </ul>
+
+         <h1 class="pagetitle">Navigering</h1>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Länktillstånd</h2>
+         <p>Länkar kan ha olika statusar: link, visited, hover och active. Man kan applicera styling när länkarna har olika tillsånd.</p>
+         <div class="secondLevelSection">
+            <h3>:link</h3>
+            <p>En vanlig obesökt länk.</p>
+            <a id="linkLink" href="http://www.google.se">Länk till google</a>
+         </div>
+         <div class="secondLevelSection">
+            <h3>:visited</h3>
+            <p>En besökt länk. I exemplet nedan kommer länken bli orange efter den har klickats på.</p>
+            <a id="visitedLink" href="http://www.google.se">Länk till google</a>
+         </div>
+         <div class="secondLevelSection">
+            <h3>:link</h3>
+            <p>En länk som användaren för muspekare över. Länken blir orange när man för muspekare över den.</p>
+            <a id="hoverLink" href="http://www.google.se">Länk till google</a>
+         </div>
+         <div class="secondLevelSection">
+            <h3>:active</h3>
+            <p>Tillfället när en länk klickas. Länken blir orange när man klickar på den.</p>
+            <a id="activeLink" href="http://www.google.se">Länk till google</a>
+         </div>
+      </div>
+
+      <div class="firstLevelSection" id="cursorP">
+         <h2>cursor</h2>
+         <p>cursor avgör vilken typ av muspekare som ska visas när man för muspekaren över ett element. Exemeplvis så används muspekare "pointer" för länkar. För man muspekaren över denna sektion kan man se att den förändras till "crosshair".</p>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Länkar som knappar</h2>
+         <div class="secondLevelSection">
+            <a href="http://www.google.se" id="button">GOOGLE</a>
+         </div>
+         <div class="secondLevelSection">
+            <a href="http://www.google.se" id="imageButton">GOOGLE</a>
+         </div>
+
+      </div>
+
+      <footer>
+         <div class="name">
+            <p>
+               >>ERIK HÖRNSTRÖM /
+            </p>
+         </div>
+         <div class="info">
+            <p>
+               erho7892
+            </p>
+            <p>
+               erho7892@dsv.su.se
+            </p>
+         </div>
+      </footer>
+
+   </body>
+</html>

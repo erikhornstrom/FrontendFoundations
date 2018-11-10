@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>Text och Listor</title>
+   <link rel="stylesheet" href="../sitestyle.css" type="text/css">
+   <link rel="stylesheet" href="pagestyle.css" type="text/css">
+</head>
+<body>
+   <div class="header">
+      <a id="nameheader" href="../index.html">[erik hörnström - webbklient - CSS]</a>
+      <img id="badgeimg" src="../images/badges.png" alt="html/cssbadge"/>
+      <h1 id="css">CSS3</h1>
+      <h1 id="x">X</h1>
+      <h1 id="html">HTML5</h1>
+
+      <ul id="site-nav">
+         <li> <a href="../index.html">Grunderna</a></li>
+         <li> <a href="textochlistor.html">Text och Listor</a></li>
+         <li> <a href="../marginsborderspadding/marginsborderspadding.html">Marginaler, Borders & Padding</a></li>
+         <li> <a href="../bilderochbakgrunder/bilderochbakgrunder.html">Bilder och bakgrunder</a></li>
+         <li> <a href="../navigering/navigering.html">Navigering</a></li>
+         <li> <a href="../tabellerochformulär/tabellerochformulär.html">Tabeller och Formulär</a></li>
+         <li> <a href="../sidlayout/sidlayout.html">Sidlayout</a></li>
+         <li> <a href="../anpassning/anpassning.html">Anpassning</a></li>
+      </ul>
+
+      <h1 class="pagetitle">Text och Listor</h1>
+   </div>
+
+
+
+   <nav class="page-nav">
+      <a href="#fontfamiljer"> >> FONTFAMILJER</a>
+      <a href="#enheter"> >> ENHETER</a>
+      <a href="#properties"> >> PROPERTIES</a>
+
+   </nav>
+
+   <div class="firstLevelSection" id="fontfamiljer">
+      <h2 class="sectionheaders">Fontfamiljer</h2>
+      <p>
+         Det finns specifika fontfamiljer, exempelvis <span class="timesNewRoman">Times New Roman</span> eller <span class="arial">Arial</span>, och sedan finns det generiska fontfamiljer. De generiska fontfamiljerna är olika grupper <br />
+         som innehåller specifika fontfamiljer av liknande utseende. Exempelvis tillhör den specifika fontfamiljen <span class="timesNewRoman">Times New Roman</span> den generiska familjen Serif, medan <span class="arial">Arial</span> tillhör <br />
+         den generiska familjen Sans-serif. Värt att notera är att alla browsers inte klarar av alla fontfamiljer.
+      </p>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders"><span class="timesNewRoman">serif</span></h3>
+         <p>
+            Är en generisk fontfamilj som innehåller fontfamiljer vars teckensnitt innehåller avslutande streck.<br>
+            Exempelvis <span class="timesNewRoman">Times New Roman</span> och <span id="georgia">Georgia</span>.
+         </p>
+      </div>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders"><span class="arial">sans-serif</span></h3>
+         <p>
+            Är en generisk fontfamilj som innehåller fontfamiljer vars teckesnitt <i>inte</i> innehåller avslutande streck ("sans" betyder utan). Denna fontfamilj anses lättare att läsa på en datorskärm. <br />
+            Exempelvis <span class="arial">Arial</span> och <span id="verdana">Verdana</span>.
+         </p>
+      </div>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders"><span class="monospace">monospace</span></h3>
+         <p>
+            Är en generisk fontfamilj där alla bokstäver har samma bredd. <br>
+            Exempelvis <span id="courierNew">Courier New</span> och <span id="lucidaConsole">Lucida Console</span>.
+         </p>
+      </div>
+   </div>
+
+   <div class="firstLevelSection" id="enheter">
+      <h2 class="sectionheaders">Enheter</h2>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">Nyckelord</h3>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">xx-small</h4>
+            <p>Sätter fontstorlek till en xx-small storlek</p>
+         </div>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">x-small</h4>
+            <p>Sätter fontstorlek till en x-small storlek</p>
+         </div>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">small</h4>
+            <p>Sätter fontstorlek till en small storlek</p>
+         </div>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">medium</h4>
+            <p>Sätter fontstorlek till en medium storlek. Medium är även default.</p>
+         </div>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">large</h4>
+            <p>Sätter fontstorlek till en large storlek</p>
+         </div>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">x-large</h4>
+            <p>Sätter fontstorlek till en x-large storlek</p>
+         </div>
+
+         <div class="thirdLevelSection">
+            <h4 class="sectionheaders">xx-large</h4>
+            <p>Sätter fontstorlek till en xx-large storlek</p>
+         </div>
+
+      </div>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">em</h3>
+         <p>Em är en dynamisk enhet. Har man satt en font-size på elementets parent så är 1em samma som den, 2em är dubbla osv. Annars är default 1em 16px.</p>
+      </div>
+
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">%</h3>
+         <p>% är en procentuell enhet. Den baseras på storleken på fonten på parent. Så om parent är 16px är 50% 8px.</p>
+      </div>
+   </div>
+
+   <div class="firstLevelSection" id="properties">
+      <h2 class="sectionheaders">Properties</h2>
+      <div class="secondLevelSection">
+         <h3 class="sectionheaders">color</h3>
+         <p>color är ett property som bestämmer färgen på texten i ett element. <br>
+            <strong>Exempel:</strong>
+         </p>
+         <p id="preDefinedColorP">Här är ett exempel där värdet för color på den här paragrafen satts som "red". Det är en av de fördefinierade färgerna.</p>
+         <p id="hexDecColorP">Här är ett annat exempel där värdet för color satts som "#57b9c6". Det är en hexadecimal färgkod som motsvarar denna färg.</p>
+   </div>
+
+   <div class="secondLevelSection">
+      <h2>Teckensnitt</h2>
+      <div class="thirdLevelSection">
+         <h3>font (inkl. font-family, font-size/line-height, font-style, font-variant & font-weight)</h3>
+         <p>
+            font är ett property som gör det möjligt att sätta fler värden relaterade till fonten utan att skriva ut alla properties specifikt. <br>
+            De properties man kan skriva ut värden för genom att bara använda "font" är:
+         </p>
+         <div class="fourthLevelSection">
+            <ol>
+               <li>
+                  <h4>font-family</h4>
+                  <p>Se beskrivning och exempel för font-family <a href="#fontfamiljer">ovan</a>.</p>
+               </li>
+
+               <li>
+                  <h4>font-size/line-height</h4>
+                  <h5>font-size</h5>
+                  <p id="fontSizeP">font-size sätter storleken på texten i ett element. Denna paragrafs storlek är satt med värdet "1.2em" för font-size</p>
+                  <h5>line-height</h5>
+                  <p id="lineHeightP">line-height sätter avstånden mellan två rader.<br>
+                     line-height för denna paragraf är satt till "85%".
+                  </p>
+               </li>
+               <li>
+                  <h4>font-style</h4>
+                  <p id="italicP">font-style specificerar stilen för en text. Exempelvis om den ska vara kursiverad. font-style för denna paragraf är satt med värdet "italic" (kursiverad).</p>
+               </li>
+               <li>
+                  <h4>font-variant</h4>
+                  <p id="fontVariantP">
+                     font-variant används för att göra fonten till en small-caps font. Det innebär texten blir med stora bokstäver men alla bokstäver blir mindre. <br>
+                     font-variant för denna paragraf är satt till "small-caps".
+                  </p>
+               </li>
+               <li>
+                  <h4>font-weight</h4>
+                  <p id="fontWeightP">
+                     font-weight används för att bestämma tjocklecken på bokstäver och tecken i en text. Exempelvis är font-weight för denna paragraf satt till "bolder".
+                  </p>
+               </li>
+            </ol>
+         </div>
+         <p>Värdena för font skrivs på följande vis:</p>
+         <pre><code>
+            p {
+               font: font-style font-variant font-weight font-size/line-height font-family
+            }
+         </code></pre>
+         <p><strong>Exempel:</strong></p>
+         <p id="fontP">Den här paragrafen är skriven med värdena "italic", "normal", "bolder", "20px", "Times New Roman, serif":</p>
+         <p>Kod:</p>
+         <pre><code>
+            #fontP {
+               font: italic normal bolder 20px Times New Roman, serif;
+            }
+         </code></pre>
+      </div>
+
+   </div>
+
+   <div class="secondLevelSection">
+      <h2>Text</h2>
+      <div class="thirdLevelSection">
+         <h3>letter-spacing</h3>
+         <p id="letterSpacingP">letter-spacing ökar eller minskar avsåtnd mellan bokstäver/tecken. letter-spacing för denna paragraf är satt till -0.5px.</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>word-spacing</h3>
+         <p id="wordSpacingP">word-spacing ökar eller minska avstånd mellan ord. word-spacing för denna text är satt till 10px.</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>text-align</h3>
+         <p id="textAlignP">text-align används för att positionera text i ett element horizontellt. text-align för denna paragraf är satt till "center".</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>text-decoration</h3>
+         <p id="textDecorationP">text-decoration används för att dekorera text. text-decoration för denna paragraf är satt till "underline".</p>
+         <p>text-decoration kan även användas som shortcut för att sätta värden för text-decoration-color och text-decoration-style.</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>text-shadow</h3>
+         <p>text-shadow används för att sätta skuggning på text. text-decoration tar värdena h-shadow(horizonell skuggning), v-shadow(vertical skuggning), blur-radius och färg.</p>
+         <p id="textShadowP">text-shadow för denna paragraf är satt till "3px", "3px", "2px" och "grey".</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>text-indent</h3>
+         <p id="textIndentP">text-indent sätter indentering för första raden av en textsektion. text-indent för denna paragraf är satt till 20px.</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>text-transform</h3>
+         <p id="textTransformP"> text-transform kontrollerar stora och små bokstäver. text-transform för denna paragraf är satt till "uppercase".</p>
+      </div>
+
+      <div class="thirdLevelSection">
+         <h3>white-space</h3>
+         <p id="whiteSpaceP">white-space bestämmer hur white space hanteras i elementet.
+            Denna text är skriven i samma p-tag som raden ovan och utan break-tag, men då värdet för white-space är satt till "pre" hanteras white space som det hade gjort i en pre-tag.
+         </p>
+      </div>
+   </div>
+
+   <div class="secondLevelSection">
+      <h2>Stycken</h2>
+      <div class="thirdLevelSection">
+         <h3>p::first-line</h3>
+         <p id="firstLineP">::first-line är en selector som gör det möjligt att styla enbart första raden i ett element.<br>
+            ::first-line används på denna paragraf för att göra färgen på första raden röd.
+         </p>
+      </div>
+      <div class="thirdLevelSection">
+         <h3>p::first-letter</h3>
+         <p id="firstLetterP">
+            ::first-letter är en selektor som används för att styla första bokstaven av texten i ett element. ::first-letter används i den här paragrafen för att göra första bokstaven röd.
+         </p>
+      </div>
+   </div>
+
+   <div class="secondLevelSection">
+      <h2>Listor</h2>
+      <div class="thirdLevelSection">
+         <h3>list-style (inkl. list-style-type, list-style-position & list-style-image)</h3>
+         <p>list-style är ett property som kan användas för att sätta värden för tre olika andra property utan att behöva skriva ut allihopa. De properties man kan sätta värden för genom list-style är:</p>
+         <ul id="listStyleUL">
+            <li>
+               <h4>list-style-type</h4>
+               <p>list-style-type bestämmer utseendet för listpunkterna. list-style-type för denna lista är satt till "square".</p>
+            </li>
+            <li>
+               <h4>list-style-position</h4>
+               <p>list-style-position bestämmer position för listpunkterna, dvs om de ska vara utanför eller innanför list item. list-style-position för denna lista är satt till outside.
+                  Det kan vi se då punkterna är utanför ramen för varje list item.</p>
+               </li>
+               <li>
+                  <h4>list-style-image</h4>
+                  <p>list-style-image används om man vill sätta en bild som listpunkt. Exempel:</p>
+                  <ul>
+                     <li class="imgitem">item1</li>
+                     <li class="imgitem">item2</li>
+                     <li class="imgitem">item3</li>
+                  </ul>
+               </li>
+            </ul>
+            <p>Ordningen man sätter värdena för list-style är: type position image.</p>
+         </div>
+
+      </div>
+
+   </div>
+
+   <footer>
+      <div class="name">
+         <p>
+            >>erho7892 /
+         </p>
+      </div>
+      <div class="info">
+         <p>
+            Erik Hörnström
+         </p>
+         <p>
+            erho7892@dsv.su.se
+         </p>
+      </div>
+   </footer>
+</body>
+</html>

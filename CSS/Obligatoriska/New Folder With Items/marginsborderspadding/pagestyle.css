@@ -1,0 +1,103 @@
+#marginP {
+   border: 1px solid;
+   margin: 20px 40px 30px 80px;
+}
+
+#borderP {
+   border: dotted 4px green;
+}
+
+#paddingP {
+   padding-left: 30px;
+   padding-top: 20px;
+   padding-right: 40px;
+   padding-bottom: 50px;
+   border: 2px solid;
+}
+
+#outlineP {
+   border: 3px solid;
+   outline: 5px solid green;
+}
+
+#visibilityP {
+   border: 2px solid;
+   visibility: hidden;
+}
+
+#clipPathP {
+   width: 100px;
+   font-size: 30px;
+   border: 10px solid;
+   clip-path: circle(50%)
+}
+
+#overflowP {
+   overflow: auto;
+   width: 320px;
+   height: 60px;
+   border: 2px solid;
+}
+
+#opacityP {
+   padding: 10px;
+   background-color: red;
+   opacity: 0.5;
+}
+
+#rgbaP {
+   padding: 10px;
+   background-color: rgba(255, 0, 0, 0.5);
+}
+
+#borderRadiusP {
+   padding: 10px;
+   border: 2px solid rgba(255, 0, 0, 0.5);
+   border-radius: 20px;
+}
+
+#multipleBackgroundsP {
+   padding: 200px;
+   background-image: url(../images/elephant.png), url(../images/grass.jpg);
+   background-position: right top, left bottom;
+   background-repeat: no-repeat, repeat;
+   background-size: cover;
+   color: white;
+   text-shadow: 2px 2px black;
+   font-size: 22px;
+   overflow-y: hidden;
+   height: 200px;
+
+}
+
+#boxShadowP {
+   padding: 10px;
+   box-shadow: 2px 2px 3px 5px black;
+   margin: 10px;
+}
+
+#linearGradiantP {
+   padding: 10px;
+   background-image: linear-gradient(to right, green, yellow, red);
+}
+
+#radialGradiantP {
+   padding: 30px;
+   background-image: radial-gradient(green, yellow,  red);
+}
+
+.blockP {
+   border: 2px solid;
+}
+
+.inlineP {
+   display: inline;
+   border: 2px solid;
+   padding: 15px;
+}
+
+.inlineBlockP {
+   display: inline-block;
+   border: 2px solid;
+   padding: 15px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Bilder och Bakgrunder</title>
+      <link rel="stylesheet" href="../sitestyle.css" type="text/css">
+      <link rel="stylesheet" href="pagestyle.css" type="text/css">
+   </head>
+   <body>
+      <div class="header">
+         <a id="nameheader" href="../index.html">[erik hörnström - webbklient - CSS]</a>
+         <img id="badgeimg" src="../images/badges.png" alt="html/cssbadge" />
+         <h1 id="css">CSS3</h1>
+         <h1 id="x">X</h1>
+         <h1 id="html">HTML5</h1>
+
+
+         <ul id="site-nav">
+            <li> <a href="../index.html">Grunderna</a></li>
+            <li> <a href="../textochlistor/textochlistor.html">Text och Listor</a></li>
+            <li> <a href="../marginsborderspadding/marginsborderspadding.html">Marginaler, Borders & Padding</a></li>
+            <li> <a href="bilderochbakgrunder.html">Bilder och bakgrunder</a></li>
+            <li> <a href="../navigering/navigering.html">Navigering</a></li>
+            <li> <a href="../tabellerochformulär/tabellerochformulär.html">Tabeller och Formulär</a></li>
+            <li> <a href="../sidlayout/sidlayout.html">Sidlayout</a></li>
+            <li> <a href="../anpassning/anpassning.html">Anpassning</a></li>
+         </ul>
+
+         <h1 class="pagetitle">Bilder och Bakgrunder</h1>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Bakgrunder</h2>
+         <div class="secondLevelSection" id="backgroundP">
+            <h3>background</h3>
+            <p>background är ett property som kan användas för att sätta följande andra properties:</p>
+            <ul>
+               <li>
+                  <h4>background-color</h4>
+                  <p>Sätter bakgrundsfärgen för ett element.</p>
+               </li>
+               <li>
+                  <h4>background-image</h4>
+                  <p>Sätter en eller flera bakgrundsbilder för elementet.</p>
+               </li>
+               <li>
+                  <h4>background-position</h4>
+                  <p>Sätter startpositionen för en bakgrundsbild för elementet.</p>
+               </li>
+               <li>
+                  <h4>background-size</h4>
+                  <p>Sätter storleken för bakgrunden. Antingen fördefinierat med auto, cover och contain, eller med vanliga enheter.</p>
+               </li>
+               <li>
+                  <h4>background-repeat</h4>
+                  <p>Bestämmer om bakgrundsbilden ska upprepas. Exempelvis om en bild är för liten för att täcka hela elementet så kan man använda repeat för att bakgrundsbilden ska upprepas där den första tar slut.</p>
+               </li>
+               <li>
+                  <h4>background-origin</h4>
+                  <p>background-origin avgör hur stor yta av elementet ska täckas. Dvs om bakgrundsbilden ska täcka content (content-box), content och padding (padding-box) eller content, padding och kantlinje (border-box).</p>
+               </li>
+               <li>
+                  <h4>background-clip</h4>
+                  <p>Avgör om bakgrunden ska beskäras utanför content (content-box), utanför padding (padding-box) eller utanför kantlinjen (border-box).</p>
+               </li>
+               <li>
+                  <h4>background-attachment</h4>
+                  <p>Avgör om bakgrundsbilden följa med eller inte vid scrollning.</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>clear & float -img</h2>
+         <div class="secondLevelSection">
+            <h3>clear</h3>
+            <p>clear används för att specificera vilken sida av andra element ett element inte får flöda.</p>
+         </div>
+         <div class="secondLevelSection">
+            <h3>float</h3>
+            <p>float används för att specificera vilken sida av andra element ett element ska flöda.</p>
+         </div>
+         <p><strong>Exempel:</strong></p>
+         <p>Här har vi satt float: left för bilderna men gett header(h4) clear:both (båda sidor) så att en header alltid börjar under en bild men paragraf-text är vid sidan om. Detta ger oss följande:</p>
+         <div class="secondLevelSection">
+            <h4>Lorem ipsum</h4>
+            <img class="boatpic" src="../images/boat.jpeg" alt="boat" width="300">
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae distinctio ea qui, dolore nam sunt molestiae asperiores facere velit eius voluptatem, maxime aperiam quaerat quod, dolor sit cupiditate nihil illo.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus architecto, ea incidunt autem eligendi libero ad fuga! Velit vero obcaecati ipsum, ducimus repellendus, consequuntur explicabo, voluptatibus eos, illum possimus corporis?
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit necessitatibus dolore voluptate voluptatem recusandae exercitationem incidunt nemo amet, laborum dicta? Commodi cum culpa obcaecati, illo ullam dolore nihil, dicta hic!
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui illum rem impedit incidunt, necessitatibus molestiae modi pariatur ea quaerat, consequatur ex, praesentium accusamus fugit exercitationem reiciendis fugiat aliquid dolores.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fuga ex eius ipsa dignissimos, libero blanditiis quisquam similique laborum error porro quia voluptatum inventore ullam aliquam eaque cumque a vel.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus molestias provident iusto, dolorem quae suscipit vitae similique harum, ipsum facilis alias blanditiis aliquid! Quos et quaerat laboriosam expedita unde vero.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae alias voluptatem eveniet nulla, rem aut. Iste asperiores in quos est, repellendus reiciendis officia adipisci fugiat inventore fuga laudantium quo numquam!
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam suscipit ex eaque adipisci assumenda sequi facere, repellendus modi quibusdam commodi repudiandae, voluptatem accusamus nam, unde libero odit laborum hic.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ducimus ad quidem quod minus quis voluptate eaque, laborum, ipsum, ut veritatis officiis facilis aperiam at sed libero, esse voluptates possimus.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cum suscipit veritatis sint repudiandae, veniam ullam harum blanditiis odit deserunt, praesentium, quam. Eveniet repellendus illo asperiores nesciunt nemo quam provident.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae distinctio ea qui, dolore nam sunt molestiae asperiores facere velit eius voluptatem, maxime aperiam quaerat quod, dolor sit cupiditate nihil illo.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus architecto, ea incidunt autem eligendi libero ad fuga! Velit vero obcaecati ipsum, ducimus repellendus, consequuntur explicabo, voluptatibus eos, illum possimus corporis?
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit necessitatibus dolore voluptate voluptatem recusandae exercitationem incidunt nemo amet, laborum dicta? Commodi cum culpa obcaecati, illo ullam dolore nihil, dicta hic!
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui illum rem impedit incidunt, necessitatibus molestiae modi pariatur ea quaerat, consequatur ex, praesentium accusamus fugit exercitationem reiciendis fugiat aliquid dolores.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fuga ex eius ipsa dignissimos, libero blanditiis quisquam similique laborum error porro quia voluptatum inventore ullam aliquam eaque cumque a vel.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus molestias provident iusto, dolorem quae suscipit vitae similique harum, ipsum facilis alias blanditiis aliquid! Quos et quaerat laboriosam expedita unde vero.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae alias voluptatem eveniet nulla, rem aut. Iste asperiores in quos est, repellendus reiciendis officia adipisci fugiat inventore fuga laudantium quo numquam!
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam suscipit ex eaque adipisci assumenda sequi facere, repellendus modi quibusdam commodi repudiandae, voluptatem accusamus nam, unde libero odit laborum hic.
+               <img class="boatpic" src="../images/boat.jpeg" alt="boat" width="200">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ducimus ad quidem quod minus quis voluptate eaque, laborum, ipsum, ut veritatis officiis facilis aperiam at sed libero, esse voluptates possimus.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cum suscipit veritatis sint repudiandae, veniam ullam harum blanditiis odit deserunt, praesentium, quam. Eveniet repellendus illo asperiores nesciunt nemo quam provident.
+            </p>
+            <h4>Lorem Ipsum</h4>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae distinctio ea qui, dolore nam sunt molestiae asperiores facere velit eius voluptatem, maxime aperiam quaerat quod, dolor sit cupiditate nihil illo.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus architecto, ea incidunt autem eligendi libero ad fuga! Velit vero obcaecati ipsum, ducimus repellendus, consequuntur explicabo, voluptatibus eos, illum possimus corporis?
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit necessitatibus dolore voluptate voluptatem recusandae exercitationem incidunt nemo amet, laborum dicta? Commodi cum culpa obcaecati, illo ullam dolore nihil, dicta hic!
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui illum rem impedit incidunt, necessitatibus molestiae modi pariatur ea quaerat, consequatur ex, praesentium accusamus fugit exercitationem reiciendis fugiat aliquid dolores.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id fuga ex eius ipsa dignissimos, libero blanditiis quisquam similique laborum error porro quia voluptatum inventore ullam aliquam eaque cumque a vel.
+            </p>
+         </div>
+
+      </div>
+
+      <footer>
+         <div class="name">
+            <p>
+               >>erho7892 /
+            </p>
+         </div>
+         <div class="info">
+            <p>
+               Erik Hörnström
+            </p>
+            <p>
+               erho7892@dsv.su.se
+            </p>
+         </div>
+      </footer>
+
+   </body>
+</html>

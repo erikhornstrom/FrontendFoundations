@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>Fixed</title>
+   <link rel="stylesheet" href="../../sitestyle.css" type="text/css">
+   <link rel="stylesheet" href="pagestyle.css" type="text/css">
+</head>
+<body>
+   <div class="header">
+      <h1>Layout - egenskaper</h1>
+   </div>
+
+   <div class="colContainer">
+      <div class="leftColumn">
+         <p></p>
+      </div>
+
+      <div class="middleColumn">
+         <div class="firstLevelSection">
+            <h2>Position</h2>
+            <div class="secondLevelSection">
+               <h3>position:</h3>
+               <p>position: bestämmer vilken positioneringsmetod som ska användas för elementet (static, relative, absolute, fixed, sticky):</p>
+
+               <div class="thirdLevelSection">
+                  <h4>static</h4>
+                  <p>static är default och positionerar ett element enligt det vanliga flödet på sidan så som den här paragrafen.</p>
+
+                  <h4>relative</h4>
+                  <p id="relativeP">
+                     relative sätter positioneringen relativt till elementets vanliga position med hjälp av
+                     attributen top, right, bottom och left. Exempelvis har vi satt positionen för
+                     denna paragrafen till relative och bottom: 20px.
+                  </p>
+
+                  <div id="absoluteDiv">
+                     <h4>absolute</h4>
+                     <p>
+                        absolute positionerar elementet relativt till närmaste "förfader" med relativ
+                        positionering. Om det inte finns någon förfader med relativ positonering så
+                        positioneras elementet med hänsyn till webbläsarfönstret. Exempelvis kan vi
+                        positionera titeln "absolute" under paragrafen trots att den är skriven ovanför
+                        i html.
+                     </p>
+                  </div>
+
+                  <h4>fixed</h4>
+                  <p>fixed positionerar ett element i relation till webbläsarfönstret och är oberoende av scroll. Exemepl är texten "FIXED" som kan ses uppe i högra hörnet.</p>
+                  <p id="fixedP">FIXED</p>
+
+                  <h4>sticky</h4>
+                  <p>ett element som har positionen sticky är positionerat i relation till scrollens position. Dvs att elementet har position relative fram tills det att scrollen når en viss punkt och då får den postionen fixed. </p>
+                  <p id="stickyP">Exempel är denna text som följer med om man scrollar nedåt på sidan.</p>
+               </div>
+            </div>
+
+            <div class="secondLevelSection">
+               <h3>Positionering</h3>
+
+               <div class="thirdLevelSection">
+                  <h3>Top, left, bottom & right</h3>
+                  <p>Som stycket om relative ovan beskriver så kan man positionera element med hjälp av properties top, left, bottom och right. Nedan visas exempel med position relative:</p>
+                  <div class="topleftbottomrightDiv">
+                     <h3 id="topExempel">top</h3>
+                     <h3 id="leftExempel">left</h3>
+                     <h3 id="bottomExempel">bottom</h3>
+                     <h3 id="rightExempel">right</h3>
+                  </div>
+               </div>
+
+               <div class="thirdLevelSection">
+                  <div class="zindexDiv">
+                     <h3>z-index</h3>
+                     <p>z-index används för att positionera element på höjden. Dvs vilket element som ska ligga längst fram om två element ligger på varandra.</p>
+                     <p id="zindexP2">Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veritatis vel, doloribus at quidem, repellendus.</p>
+                     <p id="zindexP1">Denna paragrafen har position absolute och ligger över den underliggande lorem-paragrafen med hjälp av ett högre z-index.</p>
+                  </div>
+               </div>
+
+               <div class="thirdLevelSection floatdiv">
+                  <h3>float</h3>
+                  <div class="floatdiv1"><p id="floatP1">Float bestämmer om ett element ska positioneras vänster eller höger i sin container. Gör det möjligt för andra inline-element att "omringa" elementet. Den här texten har float: left; </p></div>
+                  <div class="floatdiv2"><p id="floatP2">Den här texten float:right</p></div>
+               </div>
+
+               <div class="thirdLevelSection">
+                  <h3>clear</h3>
+                  <p>clear används för att avgöra om flytande element kan finnas runt elementet eller om elementet måste positioneras under dem.</p>
+                  <img id="clearImg" src="../../images/blueberry.jpg" alt="">
+                  <p id="clearP">
+                     Här har vi satt denna paragraf att flyta vänster men vi har satt clear:both (båda sidor) på bilden ovan så texten omsluter inte bilden.
+                  </p>
+               </div>
+
+            </div>
+         </div>
+
+         <div class="firstLevelSection">
+            <h2>Storlek</h2>
+            <div class="secondLevelSection">
+               <h3>height</h3>
+               <p id="heightP">Bestämmer höjden på elementet. Vi har satt höjden på denna paragraf till 100px.</p>
+            </div>
+            <div class="secondLevelSection">
+               <h3>width</h3>
+               <p id="widthP">Bestämmer bredden på elemetet. Vi har satt bredden på detta element till 100px.</p>
+            </div>
+            <div class="secondLevelSection">
+               <h3>max-width</h3>
+               <p id="maxWidthP">
+                  Bestämmer maxbredden på ett element. Om man förstorar ett fönster kommer elementets storlek inte överskrida denna storlek.
+                  Maxbredden på detta element är satt till 600px.
+               </p>
+            </div>
+            <div class="secondLevelSection">
+               <h3>max-height</h3>
+               <p id="maxHeightP">
+                  Bestämmer maxhöjden på ett element. Om man förstorar ett fönster kommer elementets höjd inte överskrida denna storlek.
+                  Maxhöjden på detta element är satt tll 25px.
+
+               </p>
+            </div>
+            <div class="secondLevelSection">
+               <h3>min-width</h3>
+               <p id="minWidthP">
+                  Bestämmer minimumbredden på ett element. Om man förminskar ett fönster kommer elementets bredd inte bli mindre än denna storlek.
+                  Minimumbredden på detta element är satt till 300px.
+               </p>
+            </div>
+            <div class="secondLevelSection">
+               <h3>min-height</h3>
+               <p id="minHeighthP">
+                  Bestämmer minimumhöjden på ett element. Om man förminskar ett fönster kommer elementets höjd inte bli mindre än denna storlek.
+                  Minimumhöjden på detta element är satt till 15px.
+               </p>
+            </div>
+            <div class="secondLevelSection">
+               <h3>vertical-align</h3>
+               <p>
+                  Bestämmer vertikal position på ett inline-element.
+                  vertical-align är satt till top. för denna bild: <img id="vaImg" src="../../images/blueberry.jpg" alt=""> Man kan jämföra med denna text.
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <div class="rightColumn">
+         <p></p>
+      </div>
+   </div>
+
+   <div class="footer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit veritatis, maxime natus odio quas consectetur accusantium accusamus quis amet, reprehenderit quasi iste, non nihil nostrum at cum. Alias, et, blanditiis.</p>
+   </div>
+</body>
+</html>

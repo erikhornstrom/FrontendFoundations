@@ -1,0 +1,62 @@
+#linkLink {
+   color: green;
+}
+
+#visitedLink:visited {
+   color: orange;
+}
+
+#hoverLink:hover {
+   color: orange;
+}
+
+#activeLink:active {
+   color: orange;
+}
+
+#cursorP {
+   cursor:crosshair;
+}
+
+#button {
+   color:black;
+   background-color: #58ABFF;
+   text-decoration: none;
+   border: 3px solid black;
+   padding: 5px;
+   border-radius: 10px;
+}
+
+#button:visited {
+   border-color: grey;
+   background-color: #44E8E5;
+}
+
+#button:hover {
+   background-color: #20FF7E;
+}
+
+#button:active {
+   background-color: #4844E8;
+}
+
+#imageButton {
+   color:white;
+   background-image: url(../images/redhair.jpeg);
+   text-decoration: none;
+   border: 4px solid white;
+   padding: 5px;
+   border-radius: 10px;
+}
+
+#imageButton:visited {
+   border-color: grey;
+}
+
+#imageButton:hover {
+   background-image: url(../images/egg.jpeg);
+}
+
+#imageButton:active {
+   background-image: url(../images/blueberry.jpg);
+}

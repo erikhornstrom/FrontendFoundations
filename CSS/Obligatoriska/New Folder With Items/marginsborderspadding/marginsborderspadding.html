@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Marginaler, Borders & Padding</title>
+      <link rel="stylesheet" href="../sitestyle.css" type="text/css">
+      <link rel="stylesheet" href="pagestyle.css" type="text/css">
+   </head>
+   <body>
+      <div class="header">
+         <a id="nameheader" href="../index.html">[erik hörnström - webbklient - CSS]</a>
+         <img id="badgeimg" src="../images/badges.png" alt="html/cssbadgeimg"/>
+         <h1 id="css">CSS3</h1>
+         <h1 id="x">X</h1>
+         <h1 id="html">HTML5</h1>
+
+
+         <ul id="site-nav">
+            <li> <a href="../index.html">Grunderna</a></li>
+            <li> <a href="../textochlistor/textochlistor.html">Text och Listor</a></li>
+            <li> <a href="marginsborderspadding.html">Marginaler, Borders & Padding</a></li>
+            <li> <a href="../bilderochbakgrunder/bilderochbakgrunder.html">Bilder och bakgrunder</a></li>
+            <li> <a href="../navigering/navigering.html">Navigering</a></li>
+            <li> <a href="../tabellerochformulär/tabellerochformulär.html">Tabeller och Formulär</a></li>
+            <li> <a href="../sidlayout/sidlayout.html">Sidlayout</a></li>
+            <li> <a href="../anpassning/anpassning.html">Anpassning</a></li>
+         </ul>
+         <h1 class="pagetitle">Marginaler, Borders & Padding</h1>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Boxmodell</h2>
+         <img src="../images/boxmodelimg.png" alt="boxmodel image">
+         <p>Alla HTML-element kan ses som rektangulära boxar uppbyggda av lager, så som bilden ovan visar. De fyra olika lagren är: </p>
+         <div class="secondLevelSection">
+            <h3>Innehåll (Content)</h3>
+            <p>Här syns innehållet i elementet, exempelvis text eller bild.</p>
+         </div>
+         <div class="secondLevelSection">
+            <h3>Padding (Padding)</h3>
+            <p>Skapar transparent utrymme runtom innehållet. Värt att notera är att mer padding ger en större klickbar yta på ett klickbart element.</p>
+         </div>
+         <div class="secondLevelSection">
+            <h3>Kantlinje (Border)</h3>
+            <p>Är en kantlinje som går runtom innehåll och padding.</p>
+         </div>
+         <div class="secondLevelSection">
+            <h3>Marginal (Margin)</h3>
+            <p>Skapar utrymme runtom kantlinjen. Värt att notera är att vertikala marginaler överlappar.</p>
+         </div>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Properties</h2>
+         <div class="secondLevelSection">
+            <h3>margin</h3>
+            <p>
+               margin används för att skapa yta runtom element. margin kan användas för att sätta värden för marigin-top, margin-right, margin-bottom & margin-left. <br>
+               Exempel:
+            </p>
+            <p id="marginP">ELEMENT</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>border</h3>
+            <p>
+               border används för att sätta en kantlinje runt elementen. border kan användas för att sätta border-style, border-width och border-color. <br>
+               <strong>Exempel:</strong>
+            </p>
+            <p id="borderP">ELEMENT</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>border-color</h3>
+            <p>border-color sätter färgen på kantlinjen. border-color på ovan border är satt till "green".</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>border-style</h3>
+            <p>border-style sätter stilen på kantlinjen. border-style på kantlinjen under margin är satt till "solid". border-style på kantlinjen under border är satt till "dotted".</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>border-width</h3>
+            <p>border-widht sätter kantlinjens tjocklek. border-width för kantlinjen under border är satt till 4px.</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>padding</h3>
+            <p>
+               padding skapar yta runt elementets innehåll. padding går att använda för att sätta padding för padding-top, padding-right, padding-bottom och padding-left.<br>
+               <strong>Exempel:</strong>
+            </p>
+            <p id="paddingP">ELEMENT</p>
+
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>outline</h3>
+            <p>
+               outline är ett property som sätter en linje runt kantlinjen för att få elementet att sticka ut. outline kan användas för att sätta outline-width, outline-style och outline-color. <br>
+               <strong>Exempel:</strong>
+            </p>
+            <p id="outlineP">ELEMENT</p>
+         </div>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Synlighet</h2>
+         <div class="secondLevelSection">
+            <h3>visibility</h3>
+            <p>
+               visibility används för att bestämma om ett element ska vara synligt eller ej. Värt att notera är att om visibility sätts till "hidden" så tar elementet fortfarande upp plats på siden. <br>
+               <strong>Exempel:</strong>
+            </p>
+            <p id="visibilityP">ELEMENT</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>clip-path</h3>
+            <p>
+               clip-path används för att bestämma vilka delar av ett element som ska vara synligt. Exempelvis en cirkel som utgör en viss % av elementet. <br>
+               <strong>Exempel:</strong>
+            </p>
+            <p id="clipPathP">ELEMENT</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>display</h3>
+            <p>display bestämmer hur/om ett element ska synas. De två vanligaste typerna är inline och block. Det finns även inline-block.</p>
+            <div class="thirdLevelSection">
+               <h4>block</h4>
+               <p>
+                  "display: block" innebär att elementet startar på en ny rad och tar upp hela bredden av fönstret/containern den ligger i. Vanliga block-element är h-taggar och p-taggar
+                  <strong>Exempel:</strong>
+               </p>
+               <p class="blockP">P-tag1</p>
+               <p class="blockP">P-tag2</p>
+            </div>
+
+            <div class="thirdLevelSection">
+               <h4>inline</h4>
+               <p>
+                  "display: inline" innebär att elementet startar utan radbryt. Vanliga inline-element är a-taggar. Top och bottom padding som sätts för inline-element respekteras inte.
+                  <strong>I exemplet nedan har vi satt "display: inline" på två p-tagar samt 15px padding:</strong>
+               </p>
+               <p class="inlineP">P-tag1</p>
+               <p class="inlineP">P-tag2</p>
+            </div>
+
+            <div class="thirdLevelSection">
+               <h4>inline-block</h4>
+               <p>
+                  "display: inline-block" innebär en kombination av inline och block. Elementet kan sättas inline men går att hantera som ett block-element. Exempelvis sätta höjd och bredd på elementet. Man kan även sätta top och bottom padding och margin som respekteras <br>
+                  <strong>I exemplet nedan har vi satt "display: inline-block" för två p-tagar samt satt 15px padding kring dem.</strong>
+               </p>
+               <p class="inlineBlockP">P-tag1</p>
+               <p class="inlineBlockP">P-tag2</p>
+            </div>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>overflow</h3>
+            <p>
+               overflow bestämmer vad som ska hända om ett elements innehåll "flödar" utanför elementets box. Värdena man kan sätta är: visible, hidden, scroll, auto och initial. <br>
+               <strong>I exemplet nedan är overflow satt till "auto":</strong>
+            </p>
+            <p id="overflowP">
+               texttexttexttexttexttexttexttexttexttextextt
+               ttexttexttexttexttexttexttexttexttexttexttex
+               texttexttexttexttexttexttexttexttexttexttext
+               texttexttexttexttexttexttexttexttexttexttext
+            </p>
+         </div>
+      </div>
+
+      <div class="firstLevelSection">
+         <h2>Box-styling</h2>
+         <div class="secondLevelSection">
+            <h3>Transparant</h3>
+            <p>Transparans av elementboxar kan göras på bland annat två sätt: med property "opacity" och med rgba-färger.</p>
+
+            <div class="thirdLevelSection">
+               <h4>opacity</h4>
+               <p id="opacityP">Denna bakgrundsfärg är transparant vilket gjorts med CSS-property "opacity" och ett värde på 0.5. Värt att notera är att opacity inte bara påverkar bakgrundsfärgen utan hela innehållet i elementet.</p>
+            </div>
+
+            <div class="thirdLevelSection">
+               <h4>rgba</h4>
+               <p id="rgbaP">Denna bakgrundsfärg är transparent vilket gjorts med rgba-färg. rgba-färgen som satts som värde för background-color är rgba(255, 0, 0, 0.2). Eftersom att rgba-färgen är satt som värde direkt på background-color så påverkas inte bakgrundsfärgen.</p>
+            </div>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>Rundade hörn (border-radius)</h3>
+            <p id="borderRadiusP">För att få rundade hörn på vår elementbox så kan använda oss av property "border-radius". För denna paragraf är border-radius satt till 20px. </p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>Multipla bakgrundsbilder</h3>
+            <p id="multipleBackgroundsP">
+               Man kan skapa element med multipla bakgrundsbilder genom att använda sig av property background-image och sätter flera url(pathToImage) som värde.
+               För denna paragraf har vi satt två bakgrundsbilder på följande vis: background-image: url(../images/elephant.png), url(../images/grass.jpg)); Den bilden som tillhör det värdet som sätts först är det som hamnar "längst fram". I detta fall är det elefanten.
+            </p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>Skuggor (box-shadow)</h3>
+            <p id="boxShadowP">För att ge våra element skuggeffekter kan vi använda oss av property box-shadow. För denna paragraf har vi satt box-shadow: 2px 2px 3px 5px black; Det ger oss en skugga som är 2px horisontellt och verticalt, är suddig 3px, sprider sig 5px och har färgen svart.</p>
+         </div>
+
+         <div class="secondLevelSection">
+            <h3>Gradienter</h3>
+            <p>Det finns två olika typer av gradients: linear-gradient och radial-gradient.</p>
+            <div class="thirdLevelSection">
+               <h4>linear-gradient</h4>
+               <p id="linearGradiantP">linear-gradient utgår från en sida av elementet (kan vara både sida till sida och top till bottom) och förändras gradvis till andra sidan av elementet.</p>
+            </div>
+
+            <div class="thirdLevelSection">
+               <h4>radial-gradient</h4>
+               <p id="radialGradiantP">radial-gradiant utgår från mitten av elementet och förändras gradvis ut mot kanterna åt alla håll.</p>
+            </div>
+         </div>
+      </div>
+
+
+      <footer>
+         <div class="name">
+            <p>
+               >>erho7892 /
+            </p>
+         </div>
+         <div class="info">
+            <p>
+               Erik Hörnström
+            </p>
+            <p>
+               erho7892@dsv.su.se
+            </p>
+         </div>
+      </footer>
+
+   </body>
+</html>
