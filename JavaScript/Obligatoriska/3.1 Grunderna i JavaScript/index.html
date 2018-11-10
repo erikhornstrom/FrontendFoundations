@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Grunderna i Javascript</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+
+      <h1>Grunderna i JavaScript</h1>
+
+      <h2>Array</h2>
+      <button id="arrayBttn">Skriv ut innehåll i Animals array</button>
+      <p id="arrayDisplay"></p>
+
+      <h2>Boolean</h2>
+      <p>Är 5 mindre än 4?</p>
+      <button id="BooleanBttnYes">Ja</button>
+      <button id="BooleanBttnNo">Nej</button>
+      <p id="booleanDisplay"></p>
+
+      <h2>Date</h2>
+      <p>Klockan är:</p>
+      <p id="dateDisplay"></p>
+
+      <h2>Math</h2>
+      <form action="">
+         Skriv in ett decimaltal (med punkt): <input id="roundInput" type="text">
+      </form>
+      <button id="roundBttn">Avrunda</button>
+      <p id="mathDisplay">Avrundat värde: </p>
+
+      <h2>Number</h2>
+      <p>Gör om siffra från typen string till number med Number-objektet:</p>
+      <form action="">
+         Skriv din siffra här: <input id="numberInput" type="text">
+      </form>
+      <button id="numberButton">Konvertera</button>
+      <p id="numberDisplay"></p>
+
+      <h2>RegExp</h2>
+      <h3>String replacer</h3>
+      <p>Skriv en text i textrutan nedan</p>
+      <textarea id="textAreaForRegex"></textarea>
+      <br>
+      Skriv ett ord du vill byta ut ur din text: <input type="text" id="wordToSwitchOut"> <br>
+      Skriv ordet du vill byta till: <input type="text" id="wordToSwitchIn"> <br>
+      <button id="strinReplaceBttn">Byt ut ord</button>
+      <p id="regExpOutput">Output: </p>
+
+      <h2>Global</h2>
+      <button id="globalBttn">Alert window object</button>
+
+   <script src="script.js"></script>
+   </body>
+</html>

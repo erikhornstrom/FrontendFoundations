@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>1.3 Semantiska element för text</title>
+   </head>
+   <body>
+      <h1>Semantiska element för text</h1>
+      <h2>Mark-tag</h2>
+      <p>
+         Mark-tagen används för att <mark>markera</mark>, eller "highlighta", text såsom med en markeringspenna. Se ordet "markera" i den här meningen för exempel.
+      </p>
+
+      <h2>Time & Datetime</h2>
+      <p>
+         Time-tagen och dess attribut datetime används för att definiera tidpunkt/tidsintervall och göra det läsbart för en dator så att till exempel påminnelser/alarm kan användas. <br />
+         Exempel: <br />
+      </p>
+      <ul>
+         <li>Uppgång <time>06:30</time> varje morgon</li>
+         <li>Gratulera mormor på hennes födelsedag <time datetime="2019-01-01 10:00">kl 10</time></li>
+         <li>Fotbollsträning <time datetime="2018-10-06 18:00">Onsdag vecka 45 kl 18</time></li>
+      </ul>
+      <p>I HTML:</p>
+      <pre>
+         &lt;ul&gt;
+            &lt;li&gt;Uppgång &lt;time>06:30&lt;/time&gt; varje morgon&lt;/li&gt;
+            &lt;li&gt;Gratulera mormor på hennes födelsedag &lt;time datetime="2019-01-01 10:00"&gt;kl 10&lt;/time>&lt;/li&gt;
+            &lt;li&gt;Fotbollsträning &lt;time datetime="2018-10-06 18:00"&gt;Onsdag vecka 45 kl 18&lt;/time&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      </pre>
+
+      <h3>wbr</h3>
+      <p>
+         Wbr-tagen används för att ange spcifika platser där en text ska bryta om man göra storlekn på browser-fönstret mindre. <br>
+         Gör man fönstret mindre så kommer man se att texten nedan bryter på specifika ställen:
+      </p>
+      <p>
+         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<wbr />BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB<wbr />CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC<wbr />DDDDDDDDDDDDDDDDDDDDDDDDD<wbr />FFFFFFFFFFFFFFFFFFFFFFFFF
+      </p>
+   </body>
+</html>

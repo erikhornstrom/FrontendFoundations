@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="utf-8">
+      <title>Tabeller</title>
+   </head>
+   <body>
+      <h1>Tabeller</h1>
+      <p>
+         Såhär kan en tabell i HTML se ut:
+      </p>
+      <table>
+         <caption>Tillaga ris</caption>
+         <tr>
+            <th>Portioner</th>
+            <th>Ris (dl)</th>
+            <th>Vatten (dl)</th>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>1</td>
+            <td>2</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>2</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>4</td>
+            <td>8</td>
+         </tr>
+      </table>
+
+      <p>
+         I ovan tabell hittar man 5 olika typer av HTML-element:
+      </p>
+      <ul>
+         <li>table - <code>&lt;table&gt;</code> Definierar att det är en tabell. Omsluter alla de andra elementen nedan.</li>
+         <li style="list-style: none">
+            <ul>
+               <li>caption - <code>&lt;caption&gt;</code> Definierar titeln på tabellen. I ovan exempel är "Tillaga ris" i en caption-tag.</li>
+               <li>tr - <code>&lt;tr&gt;</code> Definierar en ny rad i tabellen.</li>
+               <li style="list-style: none">
+                  <ul>
+                     <li>th - <code>&lt;th&gt;</code> Childnode till tr. Definierar en ny "header-cell" i tabellen. I ovan exempel är "Portioner", "Ris (dl)" och "Vatten (dl)" header-celler.</li>
+                     <li>td - <code>&lt;td&gt;</code> Childnode till tr. Definierar en vanlig cell(ej header-cell) i tabellen. I ovan exempel är alla siffror td-tagar. </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+
+      </ul>
+
+      <a href="../struktur.html">Tillbaka till Struktur</a>
+
+   </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="utf-8">
+      <title>List-taggar</title>
+   </head>
+   <body>
+      <h1>List-taggar</h1>
+      <h2>Description list</h2>
+      <p>
+         En description list är en typ av lista som består utav tre olika typer av element. Det första är dl-tagen som används för att definiera listan. <br />
+         Det andra är elementet dt-tagen som används för att definiera ett namn/en term i listan. <br />
+         Det tredje elementet är dd-tagen som används för att definiera beskriviningen av namnet/termen. <br>
+         Ett exempel då en description list skulle kunna användas är om man ska skriva ordförklaringar. Exempelvis:
+      </p>
+         <dl>
+            <dt>Watermelon</dt>
+               <dd>
+                  Citrullus lanatus is a plant species in the family Cucurbitaceae, <br />
+                  a vine-like (scrambler and trailer) flowering plant originally from Africa.
+               </dd>
+            <dt>Honeydrew (melon)</dt>
+               <dd>
+                  A honeydew melon, also known as a honeymelon, is the fruit of one <br>
+                  cultivar group of the muskmelon, Cucumis melo in the gourd family.
+               </dd>
+         </dl>
+         <p>
+            HTML för listan:
+         </p>
+            <pre>
+               <code>
+               &lt;dl&gt;
+                  &lt;dt&gt;Watermelon&lt;/dt&gt;
+                  &lt;dd&gt;
+                     Citrullus lanatus is a plant species in the family Cucurbitaceae, &lt;br /&gt;
+                     a vine-like (scrambler and trailer) flowering plant originally from Africa.
+                  &lt;/dd&gt;
+                  &lt;dt&gt;Honeydrew (melon)&lt;/dt&gt;
+                  &lt;dd&gt;
+                     A honeydew melon, also known as a honeymelon, is the fruit of one &lt;br&gt;
+                     cultivar group of the muskmelon, Cucumis melo in the gourd family.
+                  &lt;/dd&gt;
+               &lt;/dl&gt;
+               </code>
+            </pre>
+
+      <h2>Ordnad lista</h2>
+      <p>
+         En ordnad lista är en lista där elementen har en inbördes ordning. Det första elementet får numret 1, den andra 2 etc etc. <br />
+         En ordnad lista definieras med ol-tagen.
+         Man kan även ställa in vilket värde listan ska börja på eller om man vill representera ordningen med bokstäver/andra symboler. <br />
+         Exempel på en lista där vi, istället för att börja på 1, börjar på 10:
+      </p>
+      <ol start="10">
+         <li>Kaffe</li>
+         <li>Mjölk</li>
+         <li>Snus</li>
+         <li>Kaffefilter</li>
+      </ol>
+      <p>
+         HTML för listan:
+      </p>
+      <pre>
+         &lt;ol start="10"&gt;
+            &lt;li&gt;Kaffe&lt;/li&gt;
+            &lt;li&gt;Mjölk&lt;/li&gt;
+            &lt;li&gt;Snus&lt;/li&gt;
+            &lt;li&gt;Kaffefilter&lt;/li&gt;
+         &lt;/ol&gt;
+      </pre>
+
+      <h2>Oordnad lista</h2>
+      <p>
+         En oordnad lista är en lista precis som den ovan men där elementen inte har en inbördes ordning. <br />
+         En oordnad lista definieras med ul-tagen. <br />
+         Exempel:
+      </p>
+      <ul>
+         <li>Kaffe</li>
+         <li>Mjölk</li>
+         <li>Snus</li>
+         <li>Kaffefilter</li>
+      </ul>
+      <p>HTML för listan:</p>
+      <pre>
+         &lt;ul&gt;
+            &lt;li&gt;Kaffe&lt;/li&gt;
+            &lt;li&gt;Mjölk&lt;/li&gt;
+            &lt;li&gt;Snus&lt;/li&gt;
+            &lt;li&gt;Kaffefilter&lt;/li&gt;
+         &lt;/ul&gt;
+      </pre>
+
+      <h2>Listelement</h2>
+      <p>
+         Vid det här laget har du redan sett exempel på listelement, dvs element som skapats med li-tagen. <br />
+         Det är själva innehållet i listan. Varje ny entry i en lista är ett listelement definierat med li-tagen. <br />
+         För exempel så kan man se ovan exempel och HTML för Ordnad lista och Oordnad lista.
+      </p>
+      <a href="../struktur.html">Tillbaka till Struktur</a>
+   </body>
+</html>

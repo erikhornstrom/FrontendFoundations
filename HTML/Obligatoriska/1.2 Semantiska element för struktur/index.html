@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="utf-8">
+      <title>1.2 Semantiska element för struktur</title>
+   </head>
+   <body>
+      <section id="content">
+      <p><i>
+         Allt innehåll härifrån ned till och med "Aside" är omsluten av den semantiska tagen "section". Section-tagen används för att gruppera innehåll relaterade till samma ämne, <br />
+         i detta fall Semantiska Element  för Struktur. Section-tagen ska ej misstas med grupperings-taggar som används i styling-syfte så som exempelvis div-tagen.
+      </i></p>
+      <header>
+         <h1 id="header">Semantiska element för struktur</h1>
+         <p>
+            Semantiska element används för att beskriva för browsern och ev. andra utvecklare vad elementen som är inom dem har för betydelse i dokumentet. <br />
+            Denna del samt titeln är exempelvis en del av den semantiska tagen "header". Header används för att ge en introduktion om innehållet på sidan.
+         </p>
+      </header>
+
+      <nav id="nav">
+         <a href="#content">Section</a>
+         <a href="#header">Header</a>
+         <a href="#nav">Nav</a>
+         <a href=#article>Article</a>
+         <a href="#figure">Figure</a>
+         <a href="#aside">Aside</a>
+         <a href="#details-summary">Details & Summary</a>
+         <a href="#footer">Footer</a>
+         <p><i>Här ovan är ett navigationsfält skapat med nav-tag. Den används för att definiera navigation i samma dokument eller till andra.</i></p>
+      </nav>
+
+         <article>
+            <h2 id="article">Article-tag</h2>
+            <p>
+               Detta stycke inklusive dess titel är skrivet i en article-tag. Det är en semantisk tag som används för att berätta för till exempel sökmotorer att sidan innehåller innehåll i form av nyhetsartikel, blogpost eller dyl.
+            </p>
+         </article>
+
+         <h2 id="figure">Figure</h2>
+         <figure>
+            <img src="images/figure-example.png" alt="Figure HTML example">
+            <figcaption>
+               Fig 1. HTML-exempel på elementen figure och figcaption. <br />
+               <i>Figure-tagen talar om för browsern att det är något typ av grafiskt element. <br />
+               Figcaption-tagen ger en caption (denna text) till det grafiska elementet.</i>
+            </figcaption>
+         </figure>
+
+
+      <h2 id="details-summary">Detils & Summary</h2>
+      <details>
+         <summary>Information om details samt summary</summary>
+         <p>Details-tagen är en semantisk tag specificerar extra information som användaren kan visa eller gömma. <br />
+         Summary-tagen är barn till details-tagen och fungerar som en kort förklaring till den dolda informationen. I detta fall: "Information om details samt summary".</p>
+      </details>
+
+
+      <aside>
+         <h2 id="aside">Aside</h2>
+         <p>
+         Detta innehåll inklusive titeln är skriven i en aside-tag. Aside-tagen är en semantisk tag som används för att definiera något som inte är direkt relaterat till det övriga innehållet på sidan.<br>
+         </p>
+      </aside>
+      </section>
+
+      <footer>
+         <p id="footer">
+            </p>
+         <p>
+            <i>Detta är footern. Den innehåller vanligtvis information relaterad till sektionen/dokumentet den är relaterad till. Det kan exempelvis vara information om författare, <br />
+            kontaktinformation och copyright-information.</i><br />
+            Skapad av: Erik Hörnström <br />
+            Kontaktinformation: Stöckhölms Universitet, DSV, Postbox 1337, XXX XX Kista | Telefon: 08-16 XX XX <br />
+            Mail: erik@erik.se
+         </p>
+      </footer>
+   </body>
+</html>

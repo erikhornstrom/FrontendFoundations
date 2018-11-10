@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sw">
+   <head>
+      <meta charset="utf-8">
+      <title>Bildkartor</title>
+   </head>
+   <body>
+      <h1>Bildkartor</h1>
+      <p>
+         Bildkartor är en typ av bild som är klickbar. Ett exempel skulle kunna vara en karta där ett klick på en viss plats på bilden ger en närmre bild av platsen.<br />
+         Som exempel kan man på nedan karta klicka på New York och få fram en ny bild av Manhattan i New York:
+      </p>
+      <img src="../images/us-map.jpeg" alt="Map of US with pins" usemap="#usmap" />
+      <map name="usmap">
+         <area alt="Manhattan, New York City" href="../images/newyork.jpeg" coords="679,197,29" shape="circle">
+      </map>
+      <p>
+         HTML för bildkartan ovan:
+      </p>
+      <pre>
+         <code>
+            &lt;img src="../images/us-map.jpeg" alt="Map of US with pins" usemap="#USmap" /&gt;
+            &lt;map name="USmap"&gt;
+               &lt;area alt="Manhattan, New York City" href="../images/newyork.jpeg" coords="679,197,29" shape="circle"&gt;
+            &lt;/map&gt;
+         </code>
+      </pre>
+      <ul>
+         <li>usemap-attributet i img-tagen och name-attributet i map-tagen används för att koppla bilden till kartan.</li>
+         <li>area-tagen används för att skapa ett område på bildkartan som är klickbart och som genom att klicka på den generar en ny bild. </li>
+         <li>href-attributet i area-tagen länkar till den nya bilden.</li>
+         <li>coords-attrbutet används för att placera det klickbara området på bildkartan. Shape-attributet används för att bestämma form på det klickbara området. </li>
+      </ul>
+      <a href="../struktur.html">Tillbaka till Struktur</a>
+   </body>
+</html>

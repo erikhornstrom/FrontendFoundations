@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Hyperlänkar</title>
+   </head>
+   <body>
+
+      <h1>Hyperlänkar</h1>
+
+      <h2>Absoluta och relativa länkar</h2>
+      <p id="relative-link">
+         I en relativ länk är värdet i href-attributet enbart en fil eller en "file path". Exempelvis är länken nedan, "Tillbaka till struktur", en såda länk <br />
+         Så här ser HTML ut för den länken: <code>&lt;a href="../struktur.html"&gt;Tillbaka till Struktur&lt;/a&gt;</code>
+      </p>
+      <p id="absolute-link">
+         En absolut länk däremot inkluderar även länk till hela webbsidan. Exempelvis: <br />
+         <a href="https://www.google.se/search?q=dog">En länk till en googlesökning på "dog"</a> <br />
+         HTML för ovan länk ser ut på följande vis: <code>&lt;a href="https://www.google.se/search?q=dog"&gt;En länk till en googlesökning på "dog"&lt;/a&gt;</code>
+      </p>
+
+      <h2 id="anchor-title">Länka till ankare</h2>
+      <p>
+         Att länka till ankare innebär att man länkar till ett specifikt element, antingen på samma sida eller på en annan sida.
+         Länken nedan, "Länk till detta stycke" länkar till titeln för detta stycke genom titelns id-attribut "anchor-title". <br />
+         <a href="#anchor-title">Länk till detta stycke</a> <br />
+         HTML för länken ovan ser ut på följande sätt: <code>&lt;a href="#anchor-title"&gt;Länk till detta stycke&lt;/a&gt;</code>
+      </p>
+
+      <h2>Bildlänk</h2>
+      <p>
+         En bildlänk är en länk men istället för att det är en klickbar text så är det en klickbar bild. Exempel så länkar nedan bild till en googlesökning på "watermelon": <br />
+         <a href="https://www.google.se/search?q=watermelon"><img src="../images/melon.jpg" height="200" title="Watermelon" alt="close-up watermelon slices"/></a> <br>
+         HTML för ovan bild: <br>
+         <code>&lt;a href="https://www.google.se/search?q=watermelon"&gt;&lt;img src="../images/melon.jpg" height="200" title="Watermelon" alt="close-up watermelon slices"/&gt;&lt;/a&gt;</code>
+      </p>
+
+      <h2>Länk till olika protokoll</h2>
+      <p>
+         Man kan även länka till andra protokoll såsom https//. ftp://, file: etc. <br>
+         En ftp-länk till exempel (ftp = File Transfer Protocol) är oftast en länk till en nedladdbar fil från en FTP-server. Det kan även vara till en plats på FTP-servern(ett directory). <br>
+         Nedan är en länk som går via protokollet ftp till en specifikation om FTP (RFC 959): <br />
+         <a href="ftp://ftp.funet.fi/pub/standards/RFC/rfc959.txt">FTP-länk till RFC 959</a> <br>
+         HTML för länken ser ut på följande vis:<br />
+         <code>&lt;a href="ftp://ftp.funet.fi/pub/standards/RFC/rfc959.txt"&gt;FTP-länk till RFC 959&lt;/a&gt;</code>
+      </p>
+
+      <h2>Mailto-länk</h2>
+      <p>
+         Mailto-länkar används för att via länk göra det möjligt för användaren att öppna sin default mailklient och inleda en mailkonversation utan att själv behöva skriva in mottagadressen. <br />
+         Förutom en förifylld mailadress till mottagaren kan man även lägga till saker såsom ämnestext och cc etc. <br>
+         Här är en länk som öppnar ett mail med adressen till studievägledningen på SU med ämnestext "Utlandsstudier": <br />
+         <a href="mailto:svl@dsv.su.se?subject=Utlandsstudier">Maila studievägledning angående utlandsstudier</a> <br />
+         HTML för länk: <code>&lt;a href="mailto:svl@dsv.su.se?subject=Utlandsstudier"&gt;Maila studievägledning angående utlandsstudier&lt;/a&gt;</code>
+      </p>
+      <a href="../struktur.html">Tillbaka till Struktur</a>
+   </body>
+</html>
