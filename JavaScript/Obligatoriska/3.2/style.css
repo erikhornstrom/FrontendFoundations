@@ -19,3 +19,8 @@ button {
 p {
    text-align: center;
 }
+
+button .normal {
+    background-color: white;
+    font-weight: nomrmal;
+}
